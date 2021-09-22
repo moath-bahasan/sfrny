@@ -1,0 +1,38 @@
+@import './mixin.scss';
+
+.carousel {
+    .carousel-inner {
+        .carousel-item {
+            img {
+                height: 600px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+
+.tours-body {
+    @include tours-page;
+        .egypt-page {
+            background-color: rgb(229, 204, 186);
+            
+            .tours-heading {
+                color: brown;
+            }
+        }
+
+        .Istanbul-page {
+            background-color: #ebebeb;
+
+            .tours-heading {
+                color: rgb(29, 88, 197);
+            }
+        }
+}

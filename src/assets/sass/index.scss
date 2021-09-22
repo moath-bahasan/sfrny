@@ -1,0 +1,214 @@
+nav {
+    background-color: rgb(39, 105, 160);
+    border-bottom: 1px solid;
+    a.navbar-brand {
+        span {
+            font-size: 30px;
+            color: $color-black;
+        }
+
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+    .serves a{
+        color: $color-black;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 4px;
+        text-decoration: none;
+
+        &:hover, :active {
+            background-color: $color-white;
+            transition: all 0.5s ease;
+            color: $color-main;
+            
+        }
+    }
+
+    a.Sign-in {
+        color: $color-black;
+        font-size: $font-normal;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-white;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+
+section {
+    padding-bottom: 10px;
+    height: 100%;
+    
+    &.section-1 {
+        height: 550px !important;
+        background: url("../images/plane-841441_1920.jpg") no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        h2 {
+            position: relative;
+            top: 170px;
+            color: rgba(0, 0, 0, 0.5);
+
+            &.h2-heading {
+                color: $color-main;
+            }
+        }
+    }
+
+    &.services {
+        padding: 120px 0 60px;
+
+        .title {
+            margin-bottom: 50px;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 100px;
+                height: 2px;
+                background-color: $color-main;
+                transform: translateX(-50%); 
+            }
+
+            h2 {
+                font-size: 40px;
+                line-height: 60px;
+                color: $color-main;
+            }
+        }
+
+        .card {
+            background-color: $color-white;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 210px;
+
+            .icons {
+                font-size: 50px;
+                
+                .home {
+                    color: wheat;
+                }
+
+                .car {
+                    color: red;
+                }
+
+                .bus {
+                    color: rgba(255, 255, 0, 0.801);
+                }
+            }
+
+            .card-block {
+                h4 {
+                    font-size: 24px;
+                    line-height: 35px;
+                    color: #070c0c; 
+                }
+
+                p {
+                    font-size: $font-normal;
+                    line-height: 20px;
+                    color: #919191;
+                }
+            }
+        }
+    }
+
+    &.tours {
+        .title {
+            margin-bottom: 50px;
+            position: relative;
+            color: $color-main;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -7;
+                left: 50%;
+                width: 170px;
+                height: 2px;
+                background-color: $color-main;
+                transform: translateX(-50%); 
+            }
+        }
+        .col-6 {
+            .card {
+                margin-right: 90px;
+                border: 1px solid;
+
+                .card-text {
+                    font-weight: bold;
+                }
+            }
+        }
+        
+    }
+}
+
+footer {
+    .top-footer {
+        background-color: #171717;
+        padding: 75px 0;
+
+        h3 {
+        font-size: $font-normal;
+        line-height: 45px;
+        color: #85ecff;
+        margin-bottom: 30px;
+        position: relative; 
+
+            &:before{
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #5c5c5c; 
+            } 
+        }
+
+        ul {
+            padding: 0;
+
+                &.contact-us {
+                    li {
+                        margin-bottom: 35px;
+                        font-size: $font-normal;
+                        color: #676767;
+                    
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            padding-right: 5px;
+                        }
+                    }
+                }
+        }
+    }
+
+    .copyright {
+        background-color: #111111;
+
+        p {
+            font-size: 15px;
+            line-height: 80px;
+            color: #919191;
+            margin-bottom: 0px;
+        }
+    }
+}

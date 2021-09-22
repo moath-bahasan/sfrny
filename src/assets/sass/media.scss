@@ -1,0 +1,105 @@
+@media (max-width: 1200px) and (min-width: 992px) {
+    .tours {
+        .card {
+            &.egypt {
+                position: relative;
+                left: 50px;
+            }
+
+            &.Istanbul {
+                position: relative;
+                left: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .card {
+        &.egypt, &.Istanbul {
+            margin-bottom: 30px;
+            position: relative;
+            right: 70px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .Sign-link-1 {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        padding: .5rem 0rem;
+        .container {
+            max-width: 100%;
+            flex-direction: row-reverse;
+
+            .navbar-nav {
+                a {
+                    width: 30%;
+                    margin: 5px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .navbar-toggler {
+            outline: none;
+            margin: 0 !important;
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .Sign-link-2 {
+        display: none;
+    }
+
+    .services {
+        .card {
+            height: 250px !important;
+        }
+    }
+
+    .tours {
+        .card {
+            &.egypt, &.Istanbul {
+                margin-right: 0 !important;
+            }
+        }
+    }
+
+    footer {
+        .google-map {
+            width: 430px;
+        }
+    }
+
+    .custom-input-details {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .tours {
+        .card {
+            &.egypt, &.Istanbul {
+                position: relative;
+                right: 45px;
+            }
+        }
+    }
+}

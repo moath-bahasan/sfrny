@@ -1,0 +1,240 @@
+@import './egypt-and-istanbul.scss';
+@import './Sign-in.scss';
+@import './variables.scss';
+@import './media.scss';
+@import './mixin.scss';
+
+
+.main-page {
+    background-color: #F2F2F2;
+}
+
+nav {
+    background-color: rgb(152, 192, 224);
+    border-bottom: 1px solid;
+    
+    a.navbar-brand {
+        img {
+            height: 70px;
+            width: 70px;
+        }
+        span {
+            font-size: 30px;
+            color: $color-black;
+        }
+        
+    }
+    .navbar-nav {
+        padding-right: 0;
+        a {
+            color: $color-black;
+            font-size: 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            line-height: 40px;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+
+            &:hover, &.active {
+                background-color: $color-white;
+                transition: all 0.5s ease;
+                color: $color-main;
+                
+            }
+        }
+        
+    }
+
+    button {
+        margin: 30px auto;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+
+        span {
+            color: $color-white;
+        }
+    }
+
+
+    a.Sign-in {
+        color: $color-black;
+        font-size: $font-normal;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-white;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+
+section {
+    padding-bottom: 10px;
+    height: 100%;
+    
+    &.section-1 {
+        height: 600px !important;
+        background: url("../images/plane-841441_1920.jpg") no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        h2 {
+            position: relative;
+            top: 200px;
+            color: rgba(0, 0, 0, 0.5);
+
+            &.h2-heading {
+                color: $color-main;
+            }
+        }
+    }
+
+    &.services {
+        padding: 120px 0 60px;
+
+        .title {
+            margin-bottom: 50px;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 100px;
+                height: 2px;
+                background-color: $color-main;
+                transform: translateX(-50%); 
+            }
+
+            h2 {
+                font-size: 40px;
+                line-height: 60px;
+                color: $color-main;
+            }
+        }
+
+        .card {
+            @include card;
+
+            .icons {
+                font-size: 50px;
+                
+                .home {
+                    color: wheat;
+                }
+
+                .car {
+                    color: red;
+                }
+
+                .bus {
+                    color: rgba(207, 207, 16, 0.747);
+                }
+            }
+
+            .card-block {
+                h4 {
+                    font-size: 24px;
+                    line-height: 35px;
+                    color: #070c0c; 
+                }
+
+                p {
+                    font-size: $font-normal;
+                    line-height: 20px;
+                    color: #919191;
+                }
+            }
+        }
+    }
+
+    &.tours {
+        .title {
+            margin-bottom: 50px;
+            position: relative;
+            color: $color-main;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -7;
+                left: 50%;
+                width: 170px;
+                height: 2px;
+                background-color: $color-main;
+                transform: translateX(-50%); 
+            }
+        }
+            .card {
+                &.egypt, &.Istanbul {
+                margin-right: 80px;
+                border: 1px solid $color-main;
+                }
+                .card-text {
+                    font-weight: bold;
+                }
+        }
+        
+    }
+}
+
+footer {
+    .top-footer {
+        background-color: #171717;
+        padding: 75px 0;
+
+        h3 {
+        font-size: $font-normal;
+        line-height: 45px;
+        color: #85ecff;
+        margin-bottom: 30px;
+        position: relative; 
+
+            &:before{
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 35px;
+                height: 2px;
+                background-color: #5c5c5c; 
+            } 
+        }
+
+        ul {
+            padding: 0;
+
+                &.contact-us {
+                    li {
+                        margin-bottom: 35px;
+                        font-size: $font-normal;
+                        color: #676767;
+                    
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            padding-right: 5px;
+                        }
+                    }
+                }
+        }
+    }
+
+    .copyright {
+        background-color: #111111;
+
+        p {
+            font-size: 15px;
+            line-height: 80px;
+            color: #919191;
+            margin-bottom: 0px;
+        }
+    }
+}
